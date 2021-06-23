@@ -9,5 +9,11 @@
 
 Если какой-то функционал защит в коде, лучше создать объект для этого кода и его использовать.
 
-
-Пока Это
+!!!
+Было String team_name, Competitor competitor1, Competitor competitor2, Competitor competitor3, Competitor competitor4
+        this.competitors[0] = competitor1;
+        this.competitors[1] = competitor2;
+        this.competitors[2] = competitor3;
+        this.competitors[3] = competitor4;
+нужно String team_name, Competitor... competitors
+    this.competitors = competitors;
