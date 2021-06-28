@@ -1,0 +1,10 @@
+
+FXML документ состоит
+    Main program -описание, представление
+    FXML запускатор
+    FXML doc (внешнее представление)
+    FXML contoller JAVA (код функционал)
+
+import javafx.scene.control.TextField
+Главное импорт отсюда
+поддерживает свой CSS
