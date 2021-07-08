@@ -19,8 +19,8 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 400, 400));
         primaryStage.show();
         Controller controller = loader.getController();
-        primaryStage.setOnHidden(e ->
-                controller.closeWindows());
+       // primaryStage.setOnHidden(e ->
+       //         controller.sendEndSocket());
     }
 
     public static void main(String[] args) {

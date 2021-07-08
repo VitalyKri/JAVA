@@ -5,10 +5,17 @@
 <?import javafx.scene.layout.*?>
 <?scenebuilder-stylesheet /css/Style.css?>
 
-<VBox fx:id="vbox" alignment="center" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="Lesson6.client.Controller">
+<VBox fx:id="vbox" alignment="center" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lesson6.client.Controller">
     <stylesheets><URL value="@/Lesson6/css/Style.css" /></stylesheets>
+
+
+    <HBox fx:id="upperBox" >
+        <TextField fx:id="loginField" onAction="#sendMsg" promptText="Введите сообщение" HBox.hgrow="ALWAYS" />
+        <PasswordField fx:id="passField" onAction="#tryToAuth" promptText="Введите сообщение" HBox.hgrow="ALWAYS" />
+        <Button onAction="#tryToAuth" text="Авторизоваться" />
+    </HBox>
     <TextArea fx:id="textArea" editable="false" wrapText="true" VBox.vgrow="ALWAYS" />
-    <HBox fx:id="hbox">
+    <HBox fx:id="bottomBox" visible="false" managed="false">
         <TextField fx:id="textField" onAction="#sendMsg" promptText="Введите сообщение" HBox.hgrow="ALWAYS" />
         <Button fx:id="sendButton" onAction="#sendMsg" text="Send" />
     </HBox>
